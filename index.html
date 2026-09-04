@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Portfolio | Visual Designer</title>
+  <meta name="description" content="A futuristic professional portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="noise"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar">
+    <a href="#home" class="logo">IRFAN<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <div class="eyebrow reveal">✦ AVAILABLE FOR SELECTED PROJECTS</div>
+        <h1 class="hero-title reveal">
+          I CREATE<br>
+          <span class="gradient-text" id="typingText">VISUAL EXPERIENCES</span>
+        </h1>
+        <p class="hero-description reveal">
+          Graphic designer & creative developer crafting bold identities,
+          digital experiences and visuals built for the future.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">Explore My Work <span>↗</span></a>
+          <a href="#about" class="btn btn-ghost">Discover More <span>↓</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-ring ring-1"></div>
+        <div class="visual-ring ring-2"></div>
+        <div class="visual-ring ring-3"></div>
+        <!-- Planet Icons (PS, AI, CD, FIGMA) orbiting around center -->
+          <div class="planet-icon planet-ps"><span>PS</span></div>
+          <div class="planet-icon planet-ai"><span>AI</span></div>
+          <div class="planet-icon planet-cd"><span>CD</span></div>
+          <div class="planet-icon planet-figma"><span>FIG</span></div>
+        <div class="center-orb">
+          <div class="orb-core"></div>
+          <span>CREATE<br>+</span>
+        </div>
+        <div class="floating-card card-a">DESIGN<span>01</span></div>
+        <div class="floating-card card-b">CREATE<span>02</span></div>
+        <div class="floating-card card-c">INSPIRE<span>03</span></div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="about section section-pad" id="about">
+      <div class="section-label reveal"><span>01</span> ABOUT ME</div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <h2 class="section-title reveal">Designing ideas<br>that <em>move.</em></h2>
+          <p class="reveal">I am a passionate creative professional focused on transforming ideas into meaningful visual experiences. I combine strategy, design and technology to create work that feels distinctive and memorable.</p>
+          <p class="reveal">My approach is simple: understand the vision, challenge the ordinary, and craft every detail with purpose.</p>
+          <a href="./about.html" class="text-link reveal">MORE ABOUT ME <span>→</span></a>
+        </div>
+        <div class="stats-grid reveal">
+          <div class="stat-card"><strong>04<span>+</span></strong><small>YEARS CREATING</small></div>
+          <div class="stat-card"><strong>50<span>+</span></strong><small>PROJECTS DONE</small></div>
+          <div class="stat-card"><strong>30<span>+</span></strong><small>HAPPY CLIENTS</small></div>
+          <div class="stat-card accent"><strong>∞</strong><small>IDEAS & POSSIBILITIES</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="skills section section-pad" id="skills">
+      <div class="section-label reveal"><span>02</span> EXPERTISE</div>
+      <h2 class="section-title reveal">Tools of the<br><em>digital future.</em></h2>
+      <div class="skills-list">
+        <div class="skill-row reveal"><span class="skill-num">01</span><h3>Graphic Design</h3><p>Branding · Social Media · Print</p><span class="arrow">↗</span></div>
+        <div class="skill-row reveal"><span class="skill-num">02</span><h3>UI / UX Design</h3><p>Interfaces · Web Design · Prototypes</p><span class="arrow">↗</span></div>
+        <div class="skill-row reveal"><span class="skill-num">03</span><h3>Web Development</h3><p>HTML · CSS · JavaScript</p><span class="arrow">↗</span></div>
+        <div class="skill-row reveal"><span class="skill-num">04</span><h3>Creative Direction</h3><p>Strategy · Concepts · Visual Systems</p><span class="arrow">↗</span></div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services section section-pad" id="services">
+      <div class="section-label reveal"><span>03</span> WHAT I DO</div>
+      <div class="services-heading">
+        <h2 class="section-title reveal">From concept<br>to <em>impact.</em></h2>
+        <p class="reveal">Creative solutions tailored to make your brand stand out in a crowded digital world.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-icon">✦</div><span class="service-number">01</span>
+          <h3>Brand Identity</h3><p>Distinctive visual identities designed to communicate what makes your brand different.</p>
+          <a href="#contact">DISCOVER <span>→</span></a>
+        </article>
+        <article class="service-card featured reveal">
+          <div class="service-icon">◈</div><span class="service-number">02</span>
+          <h3>Digital Design</h3><p>Bold and intuitive digital experiences that connect brands with their audiences.</p>
+          <a href="#contact">DISCOVER <span>→</span></a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">◎</div><span class="service-number">03</span>
+          <h3>Creative Content</h3><p>Visual content systems that capture attention and create lasting impressions.</p>
+          <a href="#contact">DISCOVER <span>→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section class="projects section section-pad" id="projects">
+      <div class="section-label reveal"><span>04</span> SELECTED WORK</div>
+      <div class="projects-top">
+        <h2 class="section-title reveal">Built to be<br><em>remembered.</em></h2>
+        <div class="project-filters reveal">
+          <button class="filter active" data-filter="all">ALL</button>
+          <button class="filter" data-filter="branding">BRANDING</button>
+          <button class="filter" data-filter="digital">DIGITAL</button>
+          <button class="filter" data-filter="creative">CREATIVE</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card large reveal" data-category="branding">
+          <div class="project-art art-one"><span>N</span><i>NEXORA</i></div>
+          <div class="project-info"><div><small>BRANDING / 2026</small><h3>Nexora Energy</h3></div><span>↗</span></div>
+        </article>
+        <article class="project-card reveal" data-category="digital">
+          <div class="project-art art-two"><div class="phone-ui">◉<br><small>MODERN<br>DESIGN</small></div></div>
+          <div class="project-info"><div><small>DIGITAL / 2026</small><h3>Nova Interface</h3></div><span>↗</span></div>
+        </article>
+        <article class="project-card reveal" data-category="creative">
+          <div class="project-art art-three"><strong>FUTURE</strong><span>2026</span></div>
+          <div class="project-info"><div><small>CREATIVE / 2026</small><h3>Future Campaign</h3></div><span>↗</span></div>
+        </article>
+        <article class="project-card wide reveal" data-category="branding">
+          <div class="project-art art-four"><span>01 — 02 — 03</span><h4>FULGLOW</h4></div>
+          <div class="project-info"><div><small>BRANDING / 2026</small><h3>Fulglow Beauty</h3></div><span>↗</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== PROCESS ==================== -->
+    <section class="process section section-pad">
+      <div class="section-label reveal"><span>05</span> PROCESS</div>
+      <h2 class="section-title reveal">Good work starts<br>with a <em>good process.</em></h2>
+      <div class="process-track">
+        <div class="process-item reveal"><span>01</span><h3>Discover</h3><p>Understand the vision and define the opportunity.</p></div>
+        <div class="process-item reveal"><span>02</span><h3>Define</h3><p>Shape the strategy and establish the direction.</p></div>
+        <div class="process-item reveal"><span>03</span><h3>Design</h3><p>Explore, refine and turn ideas into visual systems.</p></div>
+        <div class="process-item reveal"><span>04</span><h3>Deliver</h3><p>Launch polished work built to make an impact.</p></div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact section section-pad" id="contact">
+      <div class="contact-glow"></div>
+      <div class="section-label reveal"><span>06</span> GET IN TOUCH</div>
+      <div class="contact-content">
+        <h2 class="contact-title reveal">Have an idea?<br><em>Let's make it real.</em></h2>
+        <p class="reveal">Tell me about your project, your idea or simply say hello.</p>
+        <a href="mailto:irfanafzal1995@gmail.com" class="big-email reveal">irfanafzal1995@gmail.com <span>↗</span></a>
+      </div>
+      <div class="contact-meta reveal">
+        <div><small>LOCATION</small><p>Pakistan · Available Worldwide</p></div>
+        <div><small>FOLLOW</small><p><a href="#">Instagram</a> <a href="#">LinkedIn</a> <a href="#">Behance</a></p></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <a href="#home" class="logo">IRFAN<span>.</span></a>
+    <p>© <span id="year"></span> ALL RIGHTS RESERVED</p>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
