@@ -1810,7 +1810,7 @@ button {
 
 /* Orbit positions - each planet orbits at a different radius and speed */
 .planet-ps {
-  animation: orbit1 18s linear infinite;
+  animation: orbit1 22s linear infinite;
   top: 50%;
   left: 50%;
   margin-top: -27px;
@@ -1818,7 +1818,7 @@ button {
   transform-origin: 27px 27px;
 }
 .planet-ai {
-  animation: orbit2 22s linear infinite reverse;
+  animation: orbit2 25s linear infinite reverse;
   top: 50%;
   left: 50%;
   margin-top: -27px;
@@ -1826,7 +1826,7 @@ button {
   transform-origin: 27px 27px;
 }
 .planet-cd {
-  animation: orbit3 14s linear infinite;
+  animation: orbit3 16s linear infinite;
   top: 50%;
   left: 50%;
   margin-top: -27px;
@@ -1834,7 +1834,7 @@ button {
   transform-origin: 27px 27px;
 }
 .planet-figma {
-  animation: orbit4 26s linear infinite reverse;
+  animation: orbit4 36s linear infinite reverse;
   top: 50%;
   left: 50%;
   margin-top: -27px;
