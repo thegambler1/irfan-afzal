@@ -38,6 +38,7 @@ button {
 }
 .section-pad {
   padding: 150px 7vw;
+  border-top: 1px solid var(--line);
 }
 
 /* ==================== BACKGROUND ==================== */
@@ -101,7 +102,7 @@ button {
 }
 .navbar.scrolled {
   background: rgba(8, 9, 13, 0.8);
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
   border-color: var(--line);
   height: 72px;
 }
@@ -172,6 +173,14 @@ button {
 .hero-content {
   max-width: 780px;
   z-index: 2;
+}
+.hero-title {
+  min-height: 2em; /* Fixed height for the title */
+}
+
+.hero-title .gradient-text {
+  display: inline-block;
+  min-width: 200px;
 }
 .eyebrow,
 .section-label {
@@ -924,6 +933,12 @@ button {
   .hero {
     grid-template-columns: 1fr;
     padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
   }
   .hero-visual {
     height: 430px;
@@ -980,6 +995,7 @@ button {
 @media (max-width: 600px) {
   .section-pad {
     padding: 100px 6vw;
+    border-top: 1px solid var(--line);
   }
   .navbar {
     padding: 0 6vw;
@@ -1816,6 +1832,7 @@ button {
   margin-top: -27px;
   margin-left: -27px;
   transform-origin: 27px 27px;
+  -webkit-animation: orbit1 22s linear infinite;
 }
 .planet-ai {
   animation: orbit2 25s linear infinite reverse;
@@ -1824,6 +1841,7 @@ button {
   margin-top: -27px;
   margin-left: -27px;
   transform-origin: 27px 27px;
+  -webkit-animation: orbit2 25s linear infinite reverse;
 }
 .planet-cd {
   animation: orbit3 16s linear infinite;
@@ -1832,6 +1850,7 @@ button {
   margin-top: -27px;
   margin-left: -27px;
   transform-origin: 27px 27px;
+  -webkit-animation: orbit3 16s linear infinite;
 }
 .planet-figma {
   animation: orbit4 36s linear infinite reverse;
@@ -1840,6 +1859,7 @@ button {
   margin-top: -27px;
   margin-left: -27px;
   transform-origin: 27px 27px;
+  -webkit-animation: orbit4 36s linear infinite reverse;
 }
 
 /* Orbit keyframes with different radii */
@@ -1859,3 +1879,5 @@ button {
   0% { transform: rotate(220deg) translateX(250px) rotate(-220deg); -webkit-transform: rotate(220deg) translateX(250px) rotate(-220deg); -moz-transform: rotate(220deg) translateX(250px) rotate(-220deg); -ms-transform: rotate(220deg) translateX(250px) rotate(-220deg); -o-transform: rotate(220deg) translateX(250px) rotate(-220deg); }
   100% { transform: rotate(580deg) translateX(250px) rotate(-580deg); -webkit-transform: rotate(580deg) translateX(250px) rotate(-580deg); -moz-transform: rotate(580deg) translateX(250px) rotate(-580deg); -ms-transform: rotate(580deg) translateX(250px) rotate(-580deg); -o-transform: rotate(580deg) translateX(250px) rotate(-580deg); }
 }
+
+/* package card css */

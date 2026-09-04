@@ -44,6 +44,7 @@ const typingElement = document.getElementById("typingText");
 const words = ["EXPERIENCES", "STORIES", "IDENTITIES", "CONCEPTS"];
 let wordIndex = 0, charIndex = words[0].length, deleting = false;
 
+
 function typeEffect() {
   const current = words[wordIndex];
   typingElement.textContent = current.substring(0, charIndex);
@@ -63,25 +64,97 @@ function typeEffect() {
 setTimeout(typeEffect, 1200);
 
 // Project filtering
-const filters = document.querySelectorAll(".filter");
-const projects = document.querySelectorAll(".project-card");
+// const filters = document.querySelectorAll(".filter");
+// const projects = document.querySelectorAll(".project-card");
 
-filters.forEach(filter => {
-  filter.addEventListener("click", () => {
-    filters.forEach(btn => btn.classList.remove("active"));
-    filter.classList.add("active");
-    const category = filter.dataset.filter;
+// filters.forEach(filter => {
+//   filter.addEventListener("click", () => {
+//     filters.forEach(btn => btn.classList.remove("active"));
+//     filter.classList.add("active");
+//     const category = filter.dataset.filter;
 
-    projects.forEach(project => {
-      const show = category === "all" || project.dataset.category === category;
-      project.classList.toggle("hidden", !show);
-      if (show) {
-        project.style.animation = "none";
-        requestAnimationFrame(() => project.style.animation = "");
+//     projects.forEach(project => {
+//       const show = category === "all" || project.dataset.category === category;
+//       project.classList.toggle("hidden", !show);
+//       if (show) {
+//         project.style.animation = "none";
+//         requestAnimationFrame(() => project.style.animation = "");
+//       }
+//     });
+//   });
+// });
+// Project filtering
+// Project filtering
+// Simple test version
+
+//working-----------------------------------
+// document.querySelectorAll('.filter').forEach(btn => {
+//   btn.addEventListener('click', function() {
+//     const category = this.dataset.filter;
+//     document.querySelectorAll('.project-card').forEach((card, index) => {
+//       if (category === 'all') {
+//         card.style.display = index < 4 ? 'block' : 'none';
+//       } else {
+//         card.style.display = card.dataset.category === category ? 'block' : 'none';
+//       }
+//     });
+//   });
+// });
+//-----------------------------------------------------------------------
+// Project filtering with animations
+document.querySelectorAll('.filter').forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Remove active class from all filters
+    document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
+    // Add active class to clicked filter
+    this.classList.add('active');
+    
+    const category = this.dataset.filter;
+    document.querySelectorAll('.project-card').forEach((card, index) => {
+      if (category === 'all') {
+        if (index < 4) {
+          card.style.display = 'block';
+          // Restart animation
+          card.style.animation = 'none';
+          requestAnimationFrame(() => {
+            card.style.animation = '';
+          });
+        } else {
+          card.style.display = 'none';
+        }
+      } else {
+        if (card.dataset.category === category) {
+          card.style.display = 'block';
+          // Restart animation
+          card.style.animation = 'none';
+          requestAnimationFrame(() => {
+            card.style.animation = '';
+          });
+        } else {
+          card.style.display = 'none';
+        }
       }
     });
   });
 });
 
+// Set default state on page load with animations
+document.addEventListener('DOMContentLoaded', function() {
+  const allFilter = document.querySelector('.filter[data-filter="all"]');
+  if (allFilter) {
+    allFilter.classList.add('active');
+    document.querySelectorAll('.project-card').forEach((card, index) => {
+      if (index < 4) {
+        card.style.display = 'block';
+        card.style.animation = 'none';
+        requestAnimationFrame(() => {
+          card.style.animation = '';
+        });
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+});
 // Current year
 document.getElementById("year").textContent = new Date().getFullYear();
