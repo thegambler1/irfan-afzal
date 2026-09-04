@@ -148,9 +148,10 @@ button {
   border: 1px solid var(--line);
   padding: 0.65rem 1rem;
   transition: 0.3s;
+  background-color: #F95D15;
 }
 .nav-cta span {
-  color: var(--accent);
+  color: var(--text);
   margin-left: 0.5rem;
 }
 .nav-cta:hover {
